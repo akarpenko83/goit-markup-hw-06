@@ -893,7 +893,112 @@
             ></use>
           </svg>
         </button>
-        <form></form>
+        <p class="modal-header">
+          Залиште свої дані, ми вам передзвонимо
+        </p>
+        <form class="modal-form">
+          <label for="username">Ім'я </label>
+
+          <div class="modal-form-wrap">
+            <input
+              class="modal-form-contacts"
+              type="text"
+              name="username"
+              id="username"
+            />
+            <svg
+              class="modal-form-icon"
+              width="12"
+              height="12"
+            >
+              <use
+                href="./images/icons.svg#icon-person"
+              ></use>
+            </svg>
+          </div>
+          <label for="tel">Телефон</label>
+          <div class="modal-form-wrap">
+            <input
+              class="modal-form-contacts"
+              type="tel"
+              name="tel"
+              id="tel"
+            />
+            <svg
+              class="modal-form-icon"
+              width="12"
+              height="12"
+            >
+              <use
+                href="./images/icons.svg#icon-phone"
+              ></use>
+            </svg>
+          </div>
+          <label for="email">Пошта </label>
+          <div class="modal-form-wrap">
+            <input
+              class="modal-form-contacts"
+              type="email"
+              name="email"
+              id="email"
+            />
+            <svg
+              class="modal-form-icon"
+              width="12"
+              height="12"
+            >
+              <use
+                href="./images/icons.svg#icon-mail"
+              ></use>
+            </svg>
+          </div>
+
+          <label for="comment">Коментар</label>
+          <textarea
+            class="modal-form-contacts comment"
+            name="comment"
+            id="comment"
+            placeholder="Введіть текст"
+          ></textarea>
+
+          <div class="modal-form-wrap policy">
+            <input
+              class="modal-policy-input visually-hidden"
+              type="checkbox"
+              name="policy"
+              id="policy"
+            />
+            <label
+              class="modal-policy-label"
+              for="policy"
+            >
+              <span class="modal-policy-chkbox">
+                <svg width="11" height="8">
+                  <use
+                    href="./images/icons.svg#icon-check"
+                  ></use>
+                </svg>
+              </span>
+              <p>
+                Погоджуюся з розсилкою та приймаю
+              </p>
+              <a
+                class="policy-link"
+                href="/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                Умови договору</a
+              >
+            </label>
+          </div>
+        </form>
+        <button
+          type="submit"
+          class="submit-btn btn"
+        >
+          Відправити
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
